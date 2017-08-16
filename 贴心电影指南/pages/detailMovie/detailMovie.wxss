@@ -1,0 +1,45 @@
+/* detailMovie.wxss */
+.meta {
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx 40rpx;
+    align-items: center;
+    height:700rpx;
+}
+.poster {
+    width:80%;
+    height: 90%;
+    margin: 20rpx;
+}
+.title {
+    font-size: 42rpx;
+    color:#444;
+}
+.middle-view {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20rpx, 40rpx;
+    align-items: center;
+}
+.info {
+    font-size: 18rpx;
+    color:#888;
+    margin-top: 15;
+    width:80%;
+}
+.summary {
+    width: 80%;
+    margin: 20rpx auto;
+
+}
+.label {
+     display: block; 
+}
+.content {
+    padding: 10rpx;
+    font-size: 20rpx;
+    color: #666;
+}
+
+

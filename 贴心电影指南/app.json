@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/Home/home",        
+    "pages/safari/safari",
+    "pages/note/note",
+    "pages/profile/profile",
+    "pages/search/search",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detailMovie/detailMovie"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh":"true"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/Home/home",
+        "iconPath": "TabbarIcon/home.png",
+        "selectedIconPath": "TabbarIcon/home-actived.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "iconPath": "TabbarIcon/search.png",
+        "selectedIconPath": "TabbarIcon/search-actived.png",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/note/note",
+        "iconPath": "TabbarIcon/note.png",
+        "selectedIconPath": "TabbarIcon/note-actived.png",
+        "text": "保留"
+      },
+      {
+        "pagePath": "pages/safari/safari",
+        "iconPath": "TabbarIcon/safari.png",
+        "selectedIconPath": "TabbarIcon/safari-actived.png",
+        "text": "练手"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "TabbarIcon/profile.png",
+        "selectedIconPath": "TabbarIcon/profile-actived.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 20000,
+    "downloadFile": 20000
+  }
+}

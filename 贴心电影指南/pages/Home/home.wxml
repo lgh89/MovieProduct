@@ -1,0 +1,21 @@
+<!--home.wxml-->
+
+
+<text>home.wxml</text>
+<image src="../../TabbarIcon/loading.gif" class="imageStyle"></image>
+
+<view class="contain">
+    <view class="item"></view>
+    <view class="item"></view>
+</view>
+
+<view class="contain">
+    <block wx:for="{{[1,2,3]}}">
+        <view class="item itemColor"></view>
+    </block>
+</view>
+
+<view class="contain">
+    <text class="item"></text>
+    <text class="item"></text>
+</view>

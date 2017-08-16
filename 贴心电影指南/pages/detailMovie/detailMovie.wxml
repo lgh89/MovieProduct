@@ -1,0 +1,30 @@
+<!--detailMovie.wxml-->
+ <loading hidden="{{loading}}">
+    玩命加载中...
+</loading> 
+<scroll-view scroll-y="true" wx:if="{{movie.title}}">
+    <view class="meta">
+        <image class="poster" src="{{movie.images.large}}"></image>
+        <text class="title">{{movie.title}}({{movie.year}})</text>
+    </view>
+    <view class="middle-view">
+        <text class="info">评分:{{movie.rating.average}}</text>
+        <text class="info">导演:<block wx:for="{{movie.directors}}">{{item.name }}</block></text>
+        <text class="info">主演:<block wx:for="{{movie.casts}}">{{item.name }}</block></text>
+    </view>
+    <view class="summary">
+        <text class="label">摘要:</text>
+        <text class="content">{{movie.summary}}</text>
+    </view>
+</scroll-view>
+
+ <!-- <scroll-view wx:if="{{movieMessage.title}}" scroll-y="true">
+   <image class="detail-image" src="{{movieMessage.images.large}}"></image>
+   <text class="detail-title">{{movieMessage.title + '(' + movieMessage.year + ')'}}</text>
+   <view class="detail-middleView">
+        <text class="middle-rating">{{'评分:' + movieMessage.rating.average}}</text>
+         <view class="middle-director">
+            <text>{{导演:}}</text>
+        </view>  
+   </view>
+</scroll-view>  -->

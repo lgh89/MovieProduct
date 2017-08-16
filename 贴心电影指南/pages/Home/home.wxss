@@ -1,0 +1,35 @@
+/* home.wxss */
+
+.imageStyle {
+    width: 50rpx;
+    height:50rpx;
+}
+.contain {
+    display: flex;
+    margin: 5rpx;
+    background-color: red;
+    width: 180rpx;
+    height:180rpx;
+     justify-content: center; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.item {
+    background-color: black;
+    width: 20rpx;
+    height:20rpx;
+    border-radius: 10rpx;
+    margin: 10rpx;
+    flex-basis: 80%;
+}
+
+.itemColor {
+    background-color: yellow;
+}
+
+page {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}

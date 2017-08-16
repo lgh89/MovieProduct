@@ -1,0 +1,6 @@
+/* search.wxss */
+
+.item {
+    background-color: red;
+}
+
