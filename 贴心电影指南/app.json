@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/search/search",        
     "pages/Home/home",        
     "pages/safari/safari",
     "pages/note/note",
     "pages/profile/profile",
-    "pages/search/search",
     "pages/index/index",
     "pages/logs/logs",
     "pages/detailMovie/detailMovie"
@@ -13,8 +13,7 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh":"true"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [

@@ -1,17 +1,24 @@
 <!--search.wxml-->
-<view class="search-view">
-    <input  />
+ <view class="search-view">
+    <input  placeholder="{{placeHoldText}}" confirm-type="search" bindconfirm="sComplete" bindfocus="sInput"/>
 </view>
 
-<scroll-view scroll-y="true">
-    <view class="item">
-        <image src="https://img3.doubanio.com/view/movie_poster_cover/ipst/public/p2233971046.webp"></image>
-        <view class="classname">
-            <text>{{无间道}}</text>
-            <text>{{无间道(2002)}}</text>
-            <text>{{导演:刘伟强 麦兆辉}}</text>
-        </view>
-        <text>9</text>
-    </view>
-</scroll-view>
-
+ <scroll-view class="search-scrollView" scroll-y="true" wx:if="{{movies.count !== 0}}">
+    <block wx:for='{{movies}}' wx:for-item='movieItem'>
+        <navigator url="../detailMovie/detailMovie">
+            <view class="item"> 
+                <image src='{{movieItem.images.small}}'></image> 
+                <view class="middleView">
+                    <text class="title">{{movieItem.title}}</text>
+                    <text class="subTitle">{{movieItem.original_title}}</text>
+                    <view class="dirTitle">
+                        <text>导演:</text>
+                        <text>
+                        hello</text>
+                    </view>
+                </view> 
+                <text class="rate">{{movieItem.rating.average}}</text>   
+            </view> 
+        </navigator>
+    </block>
+</scroll-view>  

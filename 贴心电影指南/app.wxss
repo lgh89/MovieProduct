@@ -96,6 +96,7 @@ page{
   font-size: 28rpx;
   font-weight: bold;
   color: #f74c31;
+  background-color: rebeccapurple;
 }
 
 

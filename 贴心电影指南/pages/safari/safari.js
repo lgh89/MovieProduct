@@ -1,9 +1,6 @@
 // safari.js
 var api_top250 = 'https://api.douban.com/v2/movie/top250';
 Page({
-    onPullDownRefresh:function(){
-        console.log('fjewoifjeifoj');
-    },
   /**
    * 页面的初始数据
    */

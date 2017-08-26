@@ -1,6 +1,64 @@
 /* search.wxss */
 
-.item {
-    background-color: red;
+.search-view {
+    display: flex;
+    border-bottom: 1rpx solid #cecece;
+    border-top: 1rpx solid #cecece;
+    height: 80rpx;
+}
+.search-view input{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex:1;
+    height:80rpx;
+}
+.search-scrollView {
+    display: flex;
+    flex-direction: column;
+    flex:1;
 }
 
+.item {
+    display: flex;
+    flex-direction: row;
+    padding: 20rpx 40rpx;
+    cursor: pointer;
+    border-bottom: 1rpx solid #cecece;
+}
+
+.item image{
+    width: 128rpx;
+    height: 128rpx;
+}
+
+.middleView {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40rpx;
+    /* justify-content: space-between; */
+    flex: 1;
+    background-color: yellow;
+}
+.middleView .title{
+    font-size: 32rpx;
+}
+.middleView .subTitle{
+    font-size: 22rpx;
+    color: #c0c0c0;
+}
+.dirTitle {
+    display: flex;
+    flex-direction: row;
+    font-size: 26rpx;
+    color: #999;
+    background-color: rebeccapurple;
+}
+ /* wx:for="{{movieItem.directors}}" wx:for-item="dirItem" */
+
+.rate {
+    font-size: 28rpx;
+    font-weight: bolder;
+    color: #f74c31;
+}
